@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:dicee/dice.dart';
+
 void main() {
   return runApp(
     MaterialApp(
@@ -9,15 +11,10 @@ void main() {
           title: Text('Dicee'),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: SafeArea(
+          child: DicePage(),
+        ),
       ),
     ),
   );
-}
-
-class DicePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
 }
